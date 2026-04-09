@@ -1929,10 +1929,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-radius: 100px;
 }
 
-/* On touch devices (no hover), always show arrows + dots so they're discoverable */
-@media (hover: none) {
+/* On touch devices OR small screens, always show arrows + dots + gallery btn */
+@media (hover: none), (max-width: 768px) {
   .catalog-image-nav { opacity: 1; pointer-events: auto; }
   .catalog-image-dots { opacity: 1; }
+  .gallery-btn { opacity: 1; }
 }
 
 /* Prevent blue tap highlight flash on mobile */
