@@ -194,7 +194,7 @@ function imgs(city, id, count, special) {
 var ZAGREB = [
   { id:'01', cijena:45,  dim:'4 × 4,8 × 3,35 m',    dob:8,  gallery:imgs('Zagreb','01',6), tags:['zagreb','do8'] },
   { id:'02', cijena:50,  dim:'4,3 × 5,1 × 4,5 m',   dob:8,  gallery:imgs('Zagreb','02',4), tags:['zagreb','do8'] },
-  { id:'03', cijena:100, dim:'7 × 4 × 6,2 m',        dob:11, gallery:imgs('Zagreb','03',3), tags:['zagreb','stariji','novo'], badge:'Novo' },
+  { id:'03', cijena:100, dim:'7 × 4 × 6,2 m',        dob:11, gallery:imgs('Zagreb','03',3), tags:['zagreb','stariji','novo'], badge:'Novo', paket:'1,5 × 0,9 m' },
   { id:'04', cijena:55,  dim:'4,7 × 4 × 3,9 m',     dob:11, gallery:imgs('Zagreb','04',4), tags:['zagreb','stariji'] },
   { id:'05', cijena:45,  dim:'3,3 × 5 × 2,4 m',     dob:8,  gallery:imgs('Zagreb','05',6), tags:['zagreb','do8'] },
   { id:'06', cijena:45,  dim:'4,2 × 4,7 × 2,95 m',  dob:8,  gallery:imgs('Zagreb','06',6), tags:['zagreb','do8'] },
@@ -213,7 +213,7 @@ var ZAGREB = [
   { id:'20', cijena:50,  dim:'5 × 4 × 2,9 m',       dob:8,  gallery:imgs('Zagreb','20',4), tags:['zagreb','do8'] },
   { id:'22', cijena:60,  dim:'3,9 × 4,5 × 4,1 m',   dob:10, gallery:imgs('Zagreb','22',4), tags:['zagreb','stariji'] },
   { id:'24', cijena:65,  dim:'4,7 × 5 × 3,9 m',     dob:10, gallery:imgs('Zagreb','24',4), tags:['zagreb','stariji'] },
-  { id:'25', cijena:65,  dim:'6,45 × 6,15 × 4,5 m', dob:8,  gallery:imgs('Zagreb','25',6), tags:['zagreb','do8'], badge:'Velik' },
+  { id:'25', cijena:65,  dim:'6,45 × 6,15 × 4,5 m', dob:8,  gallery:imgs('Zagreb','25',6), tags:['zagreb','do8'], badge:'Velik', paket:'1,5 × 1 m' },
   { id:'26', cijena:50,  dim:'3 × 5,9 × 3,15 m',    dob:8,  gallery:imgs('Zagreb','26',3), tags:['zagreb','do8','bazen'], badge:'S bazenom' },
   { id:'27', cijena:50,  dim:'5,1 × 4 × 3 m',       dob:8,  gallery:imgs('Zagreb','27',4), tags:['zagreb','do8'] },
   { id:'28', cijena:50,  dim:'2,9 × 5 × 3 m',       dob:8,  gallery:imgs('Zagreb','28',4), tags:['zagreb','do8'] },
@@ -230,33 +230,33 @@ var ZAGREB = [
 ];
 
 var RIJEKA = [
-  { id:'01', cijena:30,  dim:'4 × 4,8 × 3,35 m',    dob:null, gallery:imgs('Rijeka','01',6), tags:['rijeka'] },
-  { id:'02', cijena:40,  dim:'3,8 × 5,5 × 2,45 m',  dob:null, gallery:imgs('Rijeka','02',6), tags:['rijeka'] },
-  { id:'03', cijena:40,  dim:'3,3 × 5 × 2,1 m',     dob:null, gallery:imgs('Rijeka','03',6), tags:['rijeka'] },
-  { id:'04', cijena:50,  dim:'4,5 × 5 × 3 m',       dob:null, gallery:imgs('Rijeka','04',4), tags:['rijeka'] },
-  { id:'05', cijena:40,  dim:'3,3 × 5 × 2,4 m',     dob:null, gallery:imgs('Rijeka','05',6), tags:['rijeka'] },
-  { id:'06', cijena:30,  dim:'4,2 × 4,7 × 2,95 m',  dob:null, gallery:imgs('Rijeka','06',6), tags:['rijeka'] },
-  { id:'07', cijena:50,  dim:'3,5 × 4,5 × 3,2 m',   dob:null, gallery:imgs('Rijeka','07',4), tags:['rijeka'] },
+  { id:'01', cijena:30,  dim:'4 × 4,8 × 3,35 m',    dob:null, gallery:imgs('Rijeka','01',6), tags:['rijeka'], paket:'1,5 × 0,5 m' },
+  { id:'02', cijena:40,  dim:'3,8 × 5,5 × 2,45 m',  dob:null, gallery:imgs('Rijeka','02',6), tags:['rijeka'], paket:'1,5 × 0,5 m' },
+  { id:'03', cijena:40,  dim:'3,3 × 5 × 2,1 m',     dob:null, gallery:imgs('Rijeka','03',6), tags:['rijeka'], paket:'1,5 × 0,55 m' },
+  { id:'04', cijena:50,  dim:'4,5 × 5 × 3 m',       dob:null, gallery:imgs('Rijeka','04',4), tags:['rijeka'], paket:'1,7 × 0,9 m' },
+  { id:'05', cijena:40,  dim:'3,3 × 5 × 2,4 m',     dob:null, gallery:imgs('Rijeka','05',6), tags:['rijeka'], paket:'1,55 × 0,5 m' },
+  { id:'06', cijena:30,  dim:'4,2 × 4,7 × 2,95 m',  dob:null, gallery:imgs('Rijeka','06',6), tags:['rijeka'], paket:'1,4 × 0,6 m' },
+  { id:'07', cijena:50,  dim:'3,5 × 4,5 × 3,2 m',   dob:null, gallery:imgs('Rijeka','07',4), tags:['rijeka'], paket:'1,5 × 0,5 m' },
   { id:'08', cijena:100, dim:'7 × 4 × 6,2 m',       dob:12,   gallery:imgs('Rijeka','08',4), tags:['rijeka','stariji','novo'], badge:'Novo' },
-  { id:'09', cijena:60,  dim:'5,2 × 5,2 × 4,5 m',   dob:null, gallery:imgs('Rijeka','09',3), tags:['rijeka'] },
-  { id:'10', cijena:60,  dim:'5,2 × 5,2 × 4,5 m',   dob:11,   gallery:imgs('Rijeka','10',4), tags:['rijeka','stariji'] },
-  { id:'11', cijena:60,  dim:'5,5 × 5 × 4 m',       dob:11,   gallery:imgs('Rijeka','11',3), tags:['rijeka','stariji'] },
+  { id:'09', cijena:60,  dim:'5,2 × 5,2 × 4,5 m',   dob:null, gallery:imgs('Rijeka','09',3), tags:['rijeka'], paket:'1,7 × 0,9 m' },
+  { id:'10', cijena:60,  dim:'5,2 × 5,2 × 4,5 m',   dob:11,   gallery:imgs('Rijeka','10',4), tags:['rijeka','stariji'], paket:'1,7 × 0,9 m' },
+  { id:'11', cijena:60,  dim:'5,5 × 5 × 4 m',       dob:11,   gallery:imgs('Rijeka','11',3), tags:['rijeka','stariji'], paket:'1,8 × 0,9 m' },
   { id:'12', cijena:50,  dim:'4,7 × 4 × 3,4 m',     dob:null, gallery:imgs('Rijeka','12',4,true), tags:['rijeka'] },
   { id:'13', cijena:100, dim:'8,2 × 4,2 × 5 m',     dob:15,   gallery:imgs('Rijeka','13',3), tags:['rijeka','stariji'], badge:'Najveći' },
   { id:'14', cijena:70,  dim:'5 × 5 × 2,9 m',       dob:11,   gallery:imgs('Rijeka','14',4), tags:['rijeka','stariji','novo'], badge:'Novo' },
-  { id:'15', cijena:50,  dim:'4 × 5 m',             dob:null, gallery:imgs('Rijeka','15',4), tags:['rijeka'] },
+  { id:'15', cijena:50,  dim:'4 × 5 m',             dob:null, gallery:imgs('Rijeka','15',4), tags:['rijeka'], paket:'1,5 × 0,9 m' },
   { id:'16', cijena:60,  dim:'5 × 4,5 × 3,5 m',     dob:11,   gallery:imgs('Rijeka','16',4), tags:['rijeka','stariji'] },
   { id:'17', cijena:70,  dim:'5 × 4,5 × 3,4 m',     dob:11,   gallery:imgs('Rijeka','17',4), tags:['rijeka','stariji'] },
   { id:'18', cijena:70,  dim:'5,15 × 5,05 × 3,5 m', dob:11,   gallery:imgs('Rijeka','18',4), tags:['rijeka','stariji'] },
-  { id:'19', cijena:50,  dim:'5,6 × 2,55 × 2,2 m',  dob:null, gallery:imgs('Rijeka','19',4), tags:['rijeka'] },
-  { id:'20', cijena:60,  dim:'5 × 5 × 4 m',         dob:null, gallery:imgs('Rijeka','20',4), tags:['rijeka'] },
-  { id:'21', cijena:50,  dim:'5,1 × 4 × 3 m',       dob:null, gallery:imgs('Rijeka','21',4), tags:['rijeka'] },
+  { id:'19', cijena:50,  dim:'5,6 × 2,55 × 2,2 m',  dob:null, gallery:imgs('Rijeka','19',4), tags:['rijeka'], paket:'1,5 × 0,5 m' },
+  { id:'20', cijena:60,  dim:'5 × 5 × 4 m',         dob:null, gallery:imgs('Rijeka','20',4), tags:['rijeka'], paket:'1,5 × 0,5 m' },
+  { id:'21', cijena:50,  dim:'5,1 × 4 × 3 m',       dob:null, gallery:imgs('Rijeka','21',4), tags:['rijeka'], paket:'1,2 × 0,8 m' },
   { id:'22', cijena:60,  dim:'5 × 4,5 × 3,4 m',     dob:11,   gallery:imgs('Rijeka','22',4), tags:['rijeka','stariji'] },
   { id:'23', cijena:70,  dim:'5 × 5 × 3,2 m',       dob:11,   gallery:imgs('Rijeka','23',4), tags:['rijeka','stariji','novo'], badge:'Novo' },
-  { id:'26', cijena:50,  dim:'3 × 5,9 × 3,15 m',    dob:null, gallery:imgs('Rijeka','26',3), tags:['rijeka','bazen'], badge:'S bazenom' },
-  { id:'32', cijena:60,  dim:'4 × 4 × 4,4 m',       dob:null, gallery:imgs('Rijeka','32',4), tags:['rijeka'] },
-  { id:'33', cijena:60,  dim:'6 × 5 × 3,5 m',       dob:null, gallery:imgs('Rijeka','33',4), tags:['rijeka'] },
-  { id:'34', cijena:60,  dim:'7 × 4 × 4 m',         dob:null, gallery:imgs('Rijeka','34',5), tags:['rijeka'] },
+  { id:'26', cijena:50,  dim:'3 × 5,9 × 3,15 m',    dob:null, gallery:imgs('Rijeka','26',3), tags:['rijeka','bazen'], badge:'S bazenom', paket:'1 × 0,8 m' },
+  { id:'32', cijena:60,  dim:'4 × 4 × 4,4 m',       dob:null, gallery:imgs('Rijeka','32',4), tags:['rijeka'], paket:'1,7 × 0,8 m' },
+  { id:'33', cijena:60,  dim:'6 × 5 × 3,5 m',       dob:null, gallery:imgs('Rijeka','33',4), tags:['rijeka'], paket:'1,7 × 0,9 m' },
+  { id:'34', cijena:60,  dim:'7 × 4 × 4 m',         dob:null, gallery:imgs('Rijeka','34',5), tags:['rijeka'], paket:'1,7 × 0,9 m' },
 ];
 
 // ─── CARD BUILDER ──────────────────────────────────────────────────────────
@@ -325,9 +325,13 @@ function makeCard(d, city, index) {
       '<h3>Dvorac ' + d.id + '</h3>' +
       '<div class="catalog-meta">' +
         '<div class="catalog-meta-item">' +
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3v7l9 11 9-11V3z"/></svg>' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM3 12h2M19 12h2M12 3v2M12 19v2"/></svg>' +
           d.dim +
         '</div>' +
+        (d.paket ? '<div class="catalog-meta-item catalog-meta-paket">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>' +
+          'Paket: ' + d.paket +
+        '</div>' : '') +
         dobHtml +
       '</div>' +
       '<div class="catalog-price-row">' +
