@@ -4,7 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Katalog dvoraca — L-et-A dvorci na napuhavanje</title>
-<meta name="description" content="Pregledaj svih 60+ dvoraca na napuhavanje — Zagreb, Rijeka i Pirovac. Filteri po gradu, bazenu, uzrastu i novostima." />
+<meta name="description" content="Katalog dvoraca na napuhavanje — više od 30 modela za Zagreb i Rijeku. Filtrirajte po uzrastu i pronađite savršeni dvorac za rođendan vašeg djeteta." />
+<meta name="keywords" content="dvorci na napuhavanje katalog, napuhanci Zagreb, napuhanci Rijeka, najam dvoraca, dvorac za rođendan, zabava za djecu" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap&subset=latin-ext" rel="stylesheet">
@@ -12,22 +13,20 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar" aria-label="Glavna navigacija">
   <a href="index.html" class="nav-logo">L<span>-et-</span>A</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Početna</a></li>
-    <li><a href="katalog.html" class="active">Dvorci</a></li>
+    <li><a href="katalog.html#zagreb" class="active">Dvorci Zagreb</a></li>
+    <li><a href="katalog.html#rijeka">Dvorci Rijeka</a></li>
     <li><a href="uvjeti.html">Uvjeti</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-    <li><a href="#footer" class="btn-nav">Rezerviraj</a></li>
+    <li><a href="kontakt.html" class="btn-nav">Kontaktiraj nas</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- PAGE HEADER -->
 <header class="page-header">
   <div class="page-header-inner">
     <a href="index.html" class="breadcrumb">
@@ -39,43 +38,20 @@
   </div>
 </header>
 
-<!-- CATALOG -->
 <section class="catalog" id="katalog">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="section-inner">
 
-    <!-- Filter chips -->
     <div class="catalog-filters" id="filterChips" role="group" aria-label="Filtriraj dvorce">
-      <button class="filter-chip active" data-filter="all">Svi dvorci</button>
-      <button class="filter-chip" data-filter="zagreb">Zagreb</button>
-      <button class="filter-chip" data-filter="rijeka">Rijeka</button>
-      <button class="filter-chip" data-filter="bazen">S bazenom</button>
-      <button class="filter-chip" data-filter="novo">Novo</button>
+      <button class="filter-chip active" data-filter="all">Svi uzrasti</button>
       <button class="filter-chip" data-filter="do8">do 8 god.</button>
       <button class="filter-chip" data-filter="stariji">do 11 god.</button>
       <button class="filter-chip" data-filter="malisani">Mališani (2–3 god.)</button>
     </div>
 
-    <!-- Surprise button -->
-    <div class="surprise-bar">
-      <button class="btn-surprise" id="btnSurprise">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="4"/>
-          <circle cx="8"  cy="8"  r="1.2" fill="currentColor"/>
-          <circle cx="16" cy="8"  r="1.2" fill="currentColor"/>
-          <circle cx="8"  cy="16" r="1.2" fill="currentColor"/>
-          <circle cx="16" cy="16" r="1.2" fill="currentColor"/>
-          <circle cx="12" cy="12" r="1.2" fill="currentColor"/>
-        </svg>
-        Iznenadi me s dvorcem
-      </button>
-    </div>
-
-    <!-- Count -->
     <p class="catalog-count-bar" id="catalogCount"></p>
 
-    <!-- Zagreb section -->
     <div class="city-section" data-city="zagreb" id="sectionZagreb">
       <div class="city-section-header">
         <h2 class="city-section-title">Zagreb</h2>
@@ -84,7 +60,6 @@
       <div class="catalog-grid" id="gridZagreb"></div>
     </div>
 
-    <!-- Rijeka section -->
     <div class="city-section" data-city="rijeka" id="sectionRijeka">
       <div class="city-section-header">
         <h2 class="city-section-title">Rijeka</h2>
@@ -93,13 +68,11 @@
       <div class="catalog-grid" id="gridRijeka"></div>
     </div>
 
-    <!-- Empty state -->
     <div class="catalog-empty" id="catalogEmpty" style="display:none">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto 12px;display:block;color:#A78BFA"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <p>Nema dvoraca za odabrani filter.</p>
     </div>
 
-    <!-- CTA -->
     <div class="catalog-cta">
       <p class="catalog-cta-note">Nisi pronašao što tražiš? <strong>Javi nam se</strong> — možda ti mi možemo pomoći!</p>
       <a href="kontakt.html" class="btn-primary">
@@ -111,7 +84,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer" id="footer">
   <div class="footer-inner">
     <div>
@@ -123,17 +95,17 @@
       <h4>Navigacija</h4>
       <ul class="footer-links">
         <li><a href="index.html">Početna</a></li>
-        <li><a href="katalog.html">Dvorci</a></li>
+        <li><a href="katalog.html#zagreb">Dvorci Zagreb</a></li>
+        <li><a href="katalog.html#rijeka">Dvorci Rijeka</a></li>
         <li><a href="uvjeti.html">Uvjeti najma</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html">Kontaktiraj nas</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Lokacije</h4>
       <ul class="footer-links">
-        <li><a href="index.html#lokacije">Zagreb</a></li>
-        <li><a href="index.html#lokacije">Rijeka</a></li>
-        <li><a href="index.html#lokacije">Pirovac</a></li>
+        <li><a href="kontakt.html#zagreb">Zagreb</a></li>
+        <li><a href="kontakt.html#rijeka">Rijeka</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -153,7 +125,6 @@
   </div>
 </footer>
 
-<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Galerija slika">
   <button class="lb-close" id="lbClose" aria-label="Zatvori galeriju">&#x2715;</button>
   <button class="lb-prev"  id="lbPrev"  aria-label="Prethodna slika">&#8249;</button>
@@ -168,7 +139,6 @@
   </div>
 </div>
 
-<!-- DATA + RENDER (must come after script.js so window.lbOpen is available) -->
 <script src="js/script.js"></script>
 <script>
 document.getElementById('footerYear').textContent = new Date().getFullYear();
@@ -339,7 +309,7 @@ function makeCard(d, city, index) {
         '<span class="catalog-price-unit">&euro;</span>' +
       '</div>' +
       '<p class="catalog-price-sub">cjelodnevni najam</p>' +
-      '<a href="kontakt.html" class="btn-catalog">Rezerviraj</a>' +
+      '<a href="kontakt.html#' + cityClass + '" class="btn-catalog">Rezerviraj</a>' +
     '</div>' +
   '</article>';
 }
@@ -379,29 +349,57 @@ document.getElementById('catalogCount').innerHTML = '<strong>' + totalAll + '</s
 if (window.observeFadeUps)    window.observeFadeUps();
 if (window.initCatalogFilters) window.initCatalogFilters();
 
-// ─── IZNENADI ME ───────────────────────────────────────────────────────────
-document.getElementById('btnSurprise').addEventListener('click', function () {
-  var visible = Array.from(document.querySelectorAll('.catalog-card[data-tags]')).filter(function (c) {
-    return c.style.display !== 'none';
-  });
-  if (!visible.length) return;
+// ─── HASH-BASED CITY FILTER ────────────────────────────────────────────────
+function applyCityHash() {
+  var hash = window.location.hash.replace('#', '').toLowerCase();
 
-  // Remove previous spotlight
-  document.querySelectorAll('.card-spotlight').forEach(function (c) {
-    c.classList.remove('card-spotlight');
-  });
+  var secZagreb = document.getElementById('sectionZagreb');
+  var secRijeka = document.getElementById('sectionRijeka');
 
-  var pick = visible[Math.floor(Math.random() * visible.length)];
-  pick.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  // Reset both sections visible
+  if (secZagreb) secZagreb.style.display = '';
+  if (secRijeka) secRijeka.style.display = '';
 
-  // Small delay so scroll starts before animation fires
-  setTimeout(function () {
-    pick.classList.add('card-spotlight');
-    pick.addEventListener('animationend', function () {
-      pick.classList.remove('card-spotlight');
-    }, { once: true });
-  }, 400);
-});
+  // Reset filter chips to "Svi uzrasti"
+  var chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(function(c) { c.classList.remove('active'); });
+  var allChip = document.querySelector('.filter-chip[data-filter="all"]');
+  if (allChip) allChip.classList.add('active');
+  if (window.applyFilter) window.applyFilter('all');
+
+  if (hash === 'zagreb' || hash === 'rijeka') {
+    // Hide the other city section
+    var hideSection = hash === 'zagreb' ? secRijeka : secZagreb;
+    if (hideSection) hideSection.style.display = 'none';
+
+    // Update page header
+    var h1 = document.querySelector('.page-header h1');
+    if (h1) {
+      var cityName = hash === 'zagreb' ? 'Zagreb' : 'Rijeka';
+      h1.innerHTML = 'Dvorci <span class="accent">' + cityName + '</span>';
+    }
+    var pageSubtitle = document.querySelector('.page-header p');
+    if (pageSubtitle) {
+      pageSubtitle.textContent = hash === 'zagreb'
+        ? 'Svi naši Zagreb dvorci — pronađi savršeni za svoju proslavu.'
+        : 'Svi naši Rijeka dvorci — pronađi savršeni za svoju proslavu.';
+    }
+
+    // Update navbar active state
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === 'katalog.html#' + hash) a.classList.add('active');
+    });
+
+    // Update count bar
+    var data = hash === 'zagreb' ? ZAGREB : RIJEKA;
+    var countEl = document.getElementById('catalogCount');
+    if (countEl) countEl.innerHTML = '<strong>' + data.length + '</strong> dvoraca';
+  }
+}
+
+applyCityHash();
+window.addEventListener('hashchange', applyCityHash);
 </script>
 
 </body>
