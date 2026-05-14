@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meni — Špoljaričinke</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Manrope:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="main">
+    <a href="index.html" class="brand">Špoljaričinke<i>.</i></a>
+    <ul class="menu">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="meni.html" class="on">Meni</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a href="galerija.html">Galerija</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span><span class="status-text">Otvoreno · 09 — 22h</span></span>
+      <a href="kontakt.html" class="book">Rezerviraj <span class="arr">→</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Otvori izbornik" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="index.html">Početna</a>
+      <a href="meni.html">Meni</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a href="kontakt.html" class="btn mobile-nav-cta">Rezerviraj stol →</a>
+    <span class="mobile-nav-status"><span class="dot"></span><span class="status-text">Otvoreno · 09 — 22h</span></span>
+  </div>
+
+  <header class="page-hero">
+    <span class="eyebrow">Naš meni</span>
+    <h1>Sve što pečemo u <i>Ilici 42.</i></h1>
+    <p>Mala kuharska zbirka. Slatke, slane i pića. Sve se peče po narudžbi, ništa nije pripremljeno prije. Hvala ti na strpljenju.</p>
+  </header>
+
+  <main class="cookbook">
+
+    <!-- 01 — SLATKE -->
+    <section class="cb-section fade-up">
+      <div class="cb-section-head">
+        <span class="cb-section-num">01</span>
+        <h2>Slatke <i>palačinke.</i></h2>
+        <p class="quote">"Tijesto miješamo svaki dan iznova. Polako, ručno, bez prečaca. Onako kako je baka Marica tražila."</p>
+      </div>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 01.</span>
+          <span class="cb-recipe-cat">Klasik</span>
+          <h3>Nutella &amp; banana</h3>
+          <p class="cb-recipe-desc">Topla Nutella, kriške svježe banane, šećer u prahu. Klasik koji nikad ne razočara, posebno nakon škole.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>Nutella</li>
+              <li>banana</li>
+              <li>šećer u prahu</li>
+            </ul>
+          </div>
+          <span class="cb-price">5,50 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 02.</span>
+          <span class="cb-recipe-cat">Bestseller</span>
+          <h3>Bakin med &amp; orasi</h3>
+          <p class="cb-recipe-desc">Med iz Zagorja, prženi orasi, kapljica vrhnja. Ona za koju će ti baka reći "kao kod kuće".</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>med iz Zagorja</li>
+              <li>prženi orasi</li>
+              <li>vrhnje za šlag</li>
+            </ul>
+          </div>
+          <span class="cb-price">5,80 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 03.</span>
+          <span class="cb-recipe-cat">Voćno</span>
+          <h3>Šumsko voće &amp; šlag</h3>
+          <p class="cb-recipe-desc">Svježe maline, borovnice i kupine. Domaći šlag od pravog vrhnja. Najbolje ljeti.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>maline</li>
+              <li>borovnice &amp; kupine</li>
+              <li>domaći šlag</li>
+            </ul>
+          </div>
+          <span class="cb-price">6,40 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 04.</span>
+          <span class="cb-recipe-cat">Premium</span>
+          <h3>Ferrero Raj</h3>
+          <p class="cb-recipe-desc">Nutella, mljeveni lješnjaci, mrvice Ferrero Rochera i bijela belgijska čokolada. Za posebne dane.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>Nutella &amp; lješnjaci</li>
+              <li>Ferrero Rocher</li>
+              <li>bijela belgijska čokolada</li>
+            </ul>
+          </div>
+          <span class="cb-price">7,20 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 05.</span>
+          <span class="cb-recipe-cat">Sladoled uz</span>
+          <h3>Banana Split</h3>
+          <p class="cb-recipe-desc">Banana, čokoladni sirup, kuglica sladoleda od vanilije, karamelizirani orašasti plodovi. Šala koja te vraća u djetinjstvo.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>banana &amp; čokoladni sirup</li>
+              <li>sladoled vanilije</li>
+              <li>karamelizirani orašasti</li>
+            </ul>
+          </div>
+          <span class="cb-price">6,80 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 06.</span>
+          <span class="cb-recipe-cat">Topli vikend</span>
+          <h3>Cookie Dream</h3>
+          <p class="cb-recipe-desc">Komadići kućnog cookieja, mliječna čokolada, topli karamel sirup. Pečemo cookie istog jutra.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>kućni cookie</li>
+              <li>mliječna čokolada</li>
+              <li>topli karamel</li>
+            </ul>
+          </div>
+          <span class="cb-price">6,90 €</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- 02 — SLANE -->
+    <section class="cb-section fade-up">
+      <div class="cb-section-head">
+        <span class="cb-section-num">02</span>
+        <h2>Slane <i>palačinke.</i></h2>
+        <p class="quote">"Kažu da slane palačinke nisu prave palačinke. Onda smo morali napraviti svoje, da im pokažemo."</p>
+      </div>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 07.</span>
+          <span class="cb-recipe-cat">Klasik</span>
+          <h3>Šunka &amp; sir</h3>
+          <p class="cb-recipe-desc">Pršut, mladi gauda sir, svježa rikola. Slano, jednostavno, savršeno.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>domaći pršut</li>
+              <li>mladi gauda sir</li>
+              <li>svježa rikola</li>
+            </ul>
+          </div>
+          <span class="cb-price">6,50 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 08.</span>
+          <span class="cb-recipe-cat">Kućni hit</span>
+          <h3>Špoljarka Special</h3>
+          <p class="cb-recipe-desc">Piletina, gljive, dimljeno vrhnje i začinjeni cheddar. Mnogi dolaze samo zbog ove.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>marinirana piletina</li>
+              <li>šampinjoni &amp; vrhnje</li>
+              <li>začinjeni cheddar</li>
+            </ul>
+          </div>
+          <span class="cb-price">8,20 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 09.</span>
+          <span class="cb-recipe-cat">Vegan friendly</span>
+          <h3>Veggie Mediteran</h3>
+          <p class="cb-recipe-desc">Pečena tikvica, paprika, feta sir, svježi bosiljak. Lagano kao ljetni večernji obrok.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>pečena tikvica &amp; paprika</li>
+              <li>feta sir</li>
+              <li>svježi bosiljak</li>
+            </ul>
+          </div>
+          <span class="cb-price">6,90 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 10.</span>
+          <span class="cb-recipe-cat">Sirovi raj</span>
+          <h3>Quattro Formaggi</h3>
+          <p class="cb-recipe-desc">Mozzarella, gorgonzola, parmezan, dimljeni gauda. Sva četiri sira u jednom tanjuru.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>mozzarella &amp; gorgonzola</li>
+              <li>parmezan</li>
+              <li>dimljeni gauda</li>
+            </ul>
+          </div>
+          <span class="cb-price">7,40 €</span>
+        </div>
+      </article>
+
+      <article class="cb-recipe">
+        <div class="cb-recipe-img"><span>slika</span></div>
+        <div class="cb-recipe-body">
+          <span class="cb-recipe-num">N° 11.</span>
+          <span class="cb-recipe-cat">Posebno</span>
+          <h3>Pohana palačinka</h3>
+          <p class="cb-recipe-desc">Palačinka punjena svježim sirom i šunkom, pohana u prezlama i pečena do zlatne hrskave boje. Jedinstven komad na cijelom meniju.</p>
+          <div class="cb-ingredients">
+            <span class="cb-ing-title">Sastojci</span>
+            <ul>
+              <li>domaće tijesto</li>
+              <li>svježi sir &amp; šunka</li>
+              <li>jaje &amp; prezle</li>
+              <li>maslac za pečenje</li>
+            </ul>
+          </div>
+          <span class="cb-price">7,80 €</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- 03 — PIĆA -->
+    <section class="cb-section fade-up">
+      <div class="cb-section-head">
+        <span class="cb-section-num">03</span>
+        <h2>Pića <i>uz palačinku.</i></h2>
+        <p class="quote">"Sve ostalo bi bila samo dekoracija."</p>
+      </div>
+
+      <div class="drink-list">
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Domaća limunada s mentom</h4>
+            <p>Hladno · svježe cijeđeni limun, menta, trstični šećer</p>
+          </div>
+          <span class="drink-price">3,20 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Topla čokolada</h4>
+            <p>Toplo · gusta belgijska čokolada s pjenom od šlaga</p>
+          </div>
+          <span class="drink-price">3,80 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Cappuccino</h4>
+            <p>Kava · specialty espresso, pjena od svježeg mlijeka</p>
+          </div>
+          <span class="drink-price">2,60 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Espresso</h4>
+            <p>Kava · kratki, jak, lokalno prženo zrno</p>
+          </div>
+          <span class="drink-price">1,80 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Voćni smoothie</h4>
+            <p>Hladno · banana, jagoda, jogurt, med</p>
+          </div>
+          <span class="drink-price">4,20 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Sok od naranče</h4>
+            <p>Hladno · svježe cijeđen</p>
+          </div>
+          <span class="drink-price">3,00 €</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Voda</h4>
+            <p>Gazirano ili negazirano · 0,33 l</p>
+          </div>
+          <span class="drink-price">1,50 €</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="today-foot fade-up" style="margin-top: 80px;">
+      <span class="note">Allergije ili posebne želje? Reci konobaru, prilagodit ćemo.</span>
+      <a href="kontakt.html" class="see-all">Rezerviraj stol <span>→</span></a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Špoljaričinke<i>.</i></div>
+        <p class="foot-tag">Pancake shop u srcu Zagreba. Ručno mijesno tijesto, recept iz '74., otvoreno svaki dan od 09 do 22h.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Hodaj kroz</h4>
+        <a href="index.html">Početna</a>
+        <a href="meni.html">Meni</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <p>Ilica 42, Zagreb</p>
+        <p>+385 91 234 5678</p>
+        <p>hello@spoljaricinke.hr</p>
+      </div>
+      <div class="foot-col">
+        <h4>Radno vrijeme</h4>
+        <p>Pon — Pet · 09 — 22h</p>
+        <p>Sub — Ned · 10 — 23h</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Špoljaričinke</span>
+      <span>Made slowly in Zagreb</span>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+
+  <script src="nav.js"></script>
+</body>
+</html>
