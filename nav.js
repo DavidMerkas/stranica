@@ -71,13 +71,9 @@
     const textEl   = status.querySelector('.status-text');
 
     if (isOpen) {
-      dot.style.background   = '#6BCB77';
-      dot.style.animation    = '';
       status.classList.remove('closed');
       textEl.textContent     = `Otvoreno · do ${closeAt}h`;
     } else {
-      dot.style.background   = '#E85D2F';
-      dot.style.animation    = 'none';
       status.classList.add('closed');
 
       // Determine next opening
@@ -98,4 +94,13 @@
   const now = new Date();
   const msToNextMin = (60 - now.getSeconds()) * 1000 - now.getMilliseconds();
   setTimeout(() => { update(); setInterval(update, 60000); }, msToNextMin);
+})();
+
+// Špoljaričinke — Nav scroll shadow
+(function () {
+  const nav = document.querySelector('nav.main');
+  if (!nav) return;
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
